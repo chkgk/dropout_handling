@@ -2,11 +2,13 @@
 {% load otree static %}
 
 {% block title %}
-    Page title
+    Results
 {% endblock %}
 
 {% block content %}
-
+    In this example, once every player has reached the wait page (irrespective whether they dropped out or not), the
+    group moves on to this page. A more specialized dropout handling could also take place on the wait page, of course.
+        
     {% next_button %}
 {% endblock %}
 

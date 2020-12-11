@@ -3,10 +3,16 @@ from os import environ
 SESSION_CONFIGS = [
     dict(
        name='leave_wait_page',
-       display_name="Leave wait page after X seconds if no match is found",
+       display_name="Leave group matching page after X seconds if no match is found",
        num_demo_participants=3,
        app_sequence=['leave_wait_page']
     ),
+    dict(
+       name='dropout_example',
+       display_name="Reduce waiting times by 'fast-forwarding' if a timeout occurs",
+       num_demo_participants=4,
+       app_sequence=['dropout_example']
+    )
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
